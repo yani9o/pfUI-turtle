@@ -69,7 +69,7 @@ pfUI:RegisterModule("turtle-energytick", "vanilla:tbc", function ()
         else
           this.badtick = diff
         end
-      elseif this.mode == "ENERGY" and diff > 0 then
+      elseif this.mode == "ENERGY" and diff >= 14 then
         -- Use dynamic tick rate for energy
         this.energyTickRate = GetEnergyTickRate()
         this.target = this.energyTickRate
